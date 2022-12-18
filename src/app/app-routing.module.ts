@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 const routes: Routes = [
   //{ path: 'gaze-tracking', component: GazeTrackingComponent },
 
-  { path: '', redirectTo: 'motion-detection', pathMatch: "full"  },
   { path: 'motion-detection',
     loadChildren: ()=> import('../app/components/detection-wrapper/detection-wrapper.module').then(m=>m.DetectionWrapperModule)
   },

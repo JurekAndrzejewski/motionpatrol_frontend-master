@@ -1,19 +1,10 @@
  <div class="container">
    <div class="col-12">
       <div class="row">
-         <img [src]="imageUrl" width="300" height="300"/>
+        <a [routerLink]="'cam/' + link.charAt(link.length-1)">
+          <img [src]="imageUrl" width="300" height="300"/>
+        </a>
       </div>
-    </div>
-   <div class="col-4">
-    <div class="row">
-      <label for="select">Number of rectangles:</label>
-        <select id="select" [(ngModel)]="rectangles" class="form-control" style="width: 300px">
-          <option value="4">4</option>
-          <option value="8">8</option>
-          <option value="12">12</option>
-          <option value="16">16</option>
-        </select>
-     </div>
     </div>
   </div>
 

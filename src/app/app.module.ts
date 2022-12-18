@@ -15,10 +15,12 @@ import {MotionDetectionModule} from "./motion-detection";
 import {CommonModule} from "@angular/common";
 import {DetectionWrapperModule} from "./components/detection-wrapper";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { OneCameraComponent } from './components/one-camera/one-camera.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    OneCameraComponent,
   ],
   imports: [
     WebcamModule,

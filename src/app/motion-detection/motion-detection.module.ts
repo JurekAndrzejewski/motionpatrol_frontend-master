@@ -12,22 +12,25 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {FormsModule} from "@angular/forms";
+import {RouterModule} from "@angular/router";
 
 
 
 @NgModule({
   declarations: [MotionDetectionComponent],
-  imports: [
-    CommonModule,
-    WebcamModule,
-    MatSelectModule,
-    MatMenuModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatGridListModule,
-    FormsModule,
+    imports: [
+        CommonModule,
+        WebcamModule,
+        MatSelectModule,
+        MatMenuModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatGridListModule,
+        FormsModule,
+        RouterModule,
 
-  ],
+
+    ],
   exports: [MotionDetectionComponent]
 
 })

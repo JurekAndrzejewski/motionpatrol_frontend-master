@@ -18,7 +18,7 @@ export class MotionDetectionComponent implements OnInit {
     @Input() link = "http://127.0.0.1:5000/cam1";
 
     constructor(private http: HttpClient) {
-      this.mySubscription= interval(80).subscribe(() =>{
+      this.mySubscription= interval(40).subscribe(() =>{
         this.getVideoFeed();
       });
       for (let i = 0; i < 17; i++) {
